@@ -64,9 +64,10 @@ const AllocationForm = (props) => {
                         required='required'
                         type='number'
                         pattern = "[0-9]*"
+                        min='0'
                         id='cost'
                         value={cost}
-                        style={{ marginLeft: '2rem' , size: 10}}
+                        style={{ size: 10}}
                         onChange={(event) => setCost((v) => 
                             (event.target.validity.valid ? event.target.value : v))}
                         >
